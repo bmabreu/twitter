@@ -2,11 +2,12 @@ const _ = require('lodash');
 
 
 const data = [];
+const tweets = [];
 
 function add (name, content) {
     data.push({ name: name, content: content });
   }
-  
+
   function list () {
     return _.cloneDeep(data);
   }
@@ -39,7 +40,8 @@ function add (name, content) {
 
 
   // console.log(data);
-  for(let i = 0; i < data.length;i++){
-    let values = data[i];
-    console.log(`${values.name} tweets ${values.content}`);
-  }
+  // for(let i = 0; i < data.length;i++){
+  //   let values = data[i];
+  //   console.log(`${values.name} tweets ${values.content}`);
+  //   tweets.push(`${values.name} tweets ${values.content}`);
+  // }
